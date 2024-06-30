@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,221,214,1) 0%, rgba(51,102,255,1) 90% );
+}
+
+main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 30vh;
+    height: 15rem;
+    width: 15rem;
+}
+
+.player {
+    position: absolute;
+    padding: 0.25rem;
+    height: 3rem;
+    width: 3rem;
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/armor_soldier_ninja_avatar_wheel_war_warrior_helm_game_icon_262426.png');
+    background-size: 100%;
+}
+
+.spawn {
+    height: 3rem;
+    width: 3rem;
+}
+
+.finish { 
+    height: 3rem;
+    width: 3rem;
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/castle_tower_house_queen_game_king_building_princess_prince_icon_262429.png');
+    background-size: 100%;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+
+.field_A01, .field_A02, .field_A03, .field_A04, .field_B01, .field_B02, .field_B03, .field_B04, .field_C01, .field_C02, .field_C03, .field_C04,
+.field_D01, .field_D02, .field_D03, .field_D04, .field_E01, .field_E02, .field_E03, .field_E04, .field_F01, .field_F02, .field_F03,
+.field_F04 {
+    height: 3rem;
+    width: 3rem;
+    animation: rotate 10s linear infinite;
+}
+
+.field_A01, .field_A02, .field_A03, .field_A04 {
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/plant_game_mushroom_fungus_food_flower_cooking_vegetable_icon_262399.png');
+    background-size: 100%;
+}
+
+.field_B01, .field_B02, .field_B03, .field_B04 {
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/spirit_love_like_valentine_romance_soul_heart_game_icon_262424.png');
+    background-size: 100%;
+}
+
+.field_C01, .field_C02, .field_C03, .field_C04 {
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/game_drop_water_jar_bottle_drink_liquid_blue_toxic_icon_262448.png');
+    background-size: 100%;
+}
+
+.field_D01, .field_D02, .field_D03, .field_D04 {
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/feedback_rating_award_medal_badge_little_star_game_icon_262439.png');
+    background-size: 100%;
+}
+
+.field_E01, .field_E02, .field_E03, .field_E04 {
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/idea_prize_gift_shape_solution_piece_puzzle_game_icon_262417.png');
+    background-size: 100%;
+}
+
+.field_F01, .field_F02, .field_F03, .field_F04 {
+    background: url('https://icon-icons.com/icons2/4188/PNG/512/game_coin_cash_sack_dollar_bag_bucket_buck_money_icon_262454.png');
+    background-size: 100%;
+}
+
+points {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
